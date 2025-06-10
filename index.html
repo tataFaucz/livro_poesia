@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>eBook de Poesias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>eBook de Poesias</h1>
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="poemas">Poemas</button>
+            <button class="tab-btn" data-tab="descricao">Descrição</button>
+            <button class="tab-btn" data-tab="autora">Sobre a Autora</button>
+            <button class="tab-btn" data-tab="motivo">Por quê?</button>
+        </nav>
+    </header>
+    <main>
+        <section id="poemas" class="tab-content active">
+            <h2 id="poem-title"></h2>
+            <pre id="poem-text"></pre>
+            <div class="poem-nav">
+                <button id="prev-btn">Anterior</button>
+                <button id="next-btn">Próxima</button>
+            </div>
+        </section>
+        <section id="descricao" class="tab-content">
+            <h2>Sobre o eBook</h2>
+            <p>
+                Este eBook reúne poesias que celebram a beleza dos pequenos momentos, os sentimentos do cotidiano e a esperança. Cada poema foi escrito para inspirar, emocionar e conectar o leitor com a poesia presente em cada detalhe da vida.
+            </p>
+        </section>
+        <section id="autora" class="tab-content">
+            <h2>Sobre a Autora</h2>
+            <p>
+                Thais é apaixonada por palavras e poesia desde a infância. Com sensibilidade, transforma emoções em versos, buscando sempre tocar o coração de quem lê. Este é seu primeiro eBook, fruto de anos de inspiração e dedicação à escrita.
+            </p>
+        </section>
+        <section id="motivo" class="tab-content">
+            <h2>Por que este eBook?</h2>
+            <p>
+                O eBook nasceu do desejo de compartilhar sentimentos e reflexões através da poesia, tornando a arte acessível a todos. O site foi criado para facilitar o acesso e proporcionar uma experiência de leitura envolvente e acolhedora.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Thais</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
