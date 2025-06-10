@@ -1,9 +1,16 @@
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Georgia', serif;
     background: #f9f6f2;
     color: #333;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -41,6 +48,7 @@ main {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     padding: 2em;
+    flex: 1;
 }
 
 .tab-content {
@@ -94,4 +102,7 @@ footer {
     text-align: center;
     padding: 2em 1em;
     margin-top: 2em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
