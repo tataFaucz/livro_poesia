@@ -46,14 +46,37 @@ document.getElementById('next-btn').addEventListener('click', () => {
 
 displayPoem(currentPoem);
 
+// Menu lateral
+const menuBtn = document.getElementById('menu-btn');
+const sideMenu = document.getElementById('side-menu');
+const closeMenu = document.getElementById('close-menu');
+const overlay = document.getElementById('overlay');
 const tabButtons = document.querySelectorAll('.tab-btn');
 const tabContents = document.querySelectorAll('.tab-content');
 
+menuBtn.addEventListener('click', () => {
+    sideMenu.classList.add('open');
+    overlay.classList.add('active');
+});
+
+closeMenu.addEventListener('click', () => {
+    sideMenu.classList.remove('open');
+    overlay.classList.remove('active');
+});
+
+overlay.addEventListener('click', () => {
+    sideMenu.classList.remove('open');
+    overlay.classList.remove('active');
+});
+
+// Controle das abas
 tabButtons.forEach(btn => {
     btn.addEventListener('click', () => {
         tabButtons.forEach(b => b.classList.remove('active'));
         tabContents.forEach(c => c.classList.remove('active'));
         btn.classList.add('active');
         document.getElementById(btn.dataset.tab).classList.add('active');
+        sideMenu.classList.remove('open');
+        overlay.classList.remove('active');
     });
 });
