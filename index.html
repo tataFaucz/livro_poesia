@@ -2,19 +2,24 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>eBook de Poesias</title>
+    <title>Ser Entrelinhas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <button id="menu-btn" aria-label="Abrir menu">&#9776;</button>
         <h1>Ser Entrelinhas</h1>
-        <nav class="tabs">
-            <button class="tab-btn active" data-tab="poemas">Poemas</button>
-            <button class="tab-btn" data-tab="descricao">Descrição</button>
-            <button class="tab-btn" data-tab="autora">Sobre a Autora</button>
-            <button class="tab-btn" data-tab="motivo">Por quê?</button>
-        </nav>
     </header>
+    <nav id="side-menu" class="side-menu">
+        <button id="close-menu" aria-label="Fechar menu">&times;</button>
+        <ul>
+            <li><button class="tab-btn" data-tab="poemas">Poemas</button></li>
+            <li><button class="tab-btn" data-tab="descricao">Descrição</button></li>
+            <li><button class="tab-btn" data-tab="autora">Sobre a Autora</button></li>
+            <li><button class="tab-btn" data-tab="motivo">Por quê?</button></li>
+        </ul>
+    </nav>
+    <div id="overlay"></div>
     <main>
         <section id="poemas" class="tab-content active">
             <h2 id="poem-title"></h2>
@@ -24,7 +29,7 @@
                 <button id="next-btn">Próxima</button>
             </div>
         </section>
-            <section id="descricao" class="tab-content">
+        <section id="descricao" class="tab-content">
             <h2>Sobre o eBook</h2>
             <p>
                 <strong>Ser Entrelinhas</strong> é uma coletânea de poesias que explora sentimentos profundos, emoções do cotidiano e as nuances do ser. Cada verso é um convite à reflexão e ao autoconhecimento, buscando tocar o leitor com sensibilidade e verdade. Este eBook foi criado para inspirar, emocionar e revelar a beleza que existe nas entrelinhas da vida.
