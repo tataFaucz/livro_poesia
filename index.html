@@ -1,56 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Ser Entrelinhas</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ser Entrelinhas</title>
+  <meta name="description" content="Descubra 'Ser Entrelinhas' — uma coletânea de poesias sobre sentimentos, dor e renascimento."/>
+  <meta property="og:title" content="Ser Entrelinhas - eBook de Poesias"/>
+  <meta property="og:description" content="Versos que acolhem e emocionam. Por Thais Faucz Jasse."/>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <header>
-        <button id="menu-btn" aria-label="Abrir menu">&#9776;</button>
-        <h1>Ser Entrelinhas</h1>
-    </header>
-    <nav id="side-menu" class="side-menu">
-        <button id="close-menu" aria-label="Fechar menu">&times;</button>
-        <ul>
-            <li><button class="tab-btn" data-tab="poemas">Poemas</button></li>
-            <li><button class="tab-btn" data-tab="descricao">Descrição</button></li>
-            <li><button class="tab-btn" data-tab="autora">Sobre a Autora</button></li>
-            <li><button class="tab-btn" data-tab="motivo">Por quê?</button></li>
-        </ul>
-    </nav>
-    <div id="overlay"></div>
-    <main>
-        <section id="poemas" class="tab-content active">
-            <h2 id="poem-title"></h2>
-            <pre id="poem-text"></pre>
-            <div class="poem-nav">
-                <button id="prev-btn">Anterior</button>
-                <button id="next-btn">Próxima</button>
-            </div>
-        </section>
-        <section id="descricao" class="tab-content">
-            <h2>Sobre o eBook</h2>
-            <p>
-                <strong>Ser Entrelinhas</strong> é uma coletânea de poesias que explora sentimentos profundos, emoções do cotidiano e as nuances do ser. Cada verso é um convite à reflexão e ao autoconhecimento, buscando tocar o leitor com sensibilidade e verdade. Este eBook foi criado para inspirar, emocionar e revelar a beleza que existe nas entrelinhas da vida.
+  <header>
+    <button id="menu-btn" aria-label="Abrir menu">&#9776;</button>
+    <h1>Ser Entrelinhas</h1>
+  </header>
+
+  <nav id="side-menu" class="side-menu">
+    <button id="close-menu" aria-label="Fechar menu">&times;</button>
+    <ul>
+      <li><button class="tab-btn active" data-tab="poemas">Poemas</button></li>
+      <li><button class="tab-btn" data-tab="descricao">Descrição</button></li>
+      <li><button class="tab-btn" data-tab="autora">Sobre a Autora</button></li>
+      <li><button class="tab-btn" data-tab="motivo">Por quê?</button></li>
+      <li><button class="tab-btn" data-tab="depoimentos">Depoimentos</button></li>
+    </ul>
+  </nav>
+
+  <div id="overlay"></div>
+
+  <main>
+    <section id="poemas" class="tab-content active">
+      <h2 id="poem-title"></h2>
+      <div id="poem-text" class="poem-text"></div>
+      <div class="poem-nav">
+        <button id="prev-btn" aria-label="Poema anterior">Anterior</button>
+        <button id="next-btn" aria-label="Próximo poema">Próxima</button>
+      </div>
+    </section>
+
+    <section id="descricao" class="tab-content">
+      <h2>Sobre o eBook</h2>
+      <p><strong>Ser Entrelinhas</strong> é uma coletânea de poesias que explora sentimentos profundos,  emoções do cotidiano e as nuances do ser. Cada verso é um convite à reflexão e ao autoconhecimento, buscando tocar o leitor com sensibilidade e verdade. Este eBook foi criado para inspirar, emocionar e revelar a beleza que existe nas entrelinhas da vida.
             </p>
-        </section>
-        <section id="autora" class="tab-content">
-            <h2>Sobre a Autora</h2>
-            <p>
-                Thais é apaixonada por palavras e pelo universo dos sentimentos. Desde cedo, encontrou na poesia uma forma de expressar emoções, vivências e sonhos. Suas inspirações vêm das experiências cotidianas, das relações e da busca constante por significado. Este é seu primeiro eBook, fruto de uma jornada de sensibilidade, coragem e entrega à escrita.
+    </section>
+
+    <section id="autora" class="tab-content">
+      <h2>Sobre a Autora</h2>
+      <p>Thais é apaixonada por palavras e pelo universo dos sentimentos.  Desde cedo, encontrou na poesia uma forma de expressar emoções, vivências e sonhos. Suas inspirações vêm das experiências cotidianas, das relações e da busca constante por significado. Este é seu primeiro eBook, fruto de uma jornada de sensibilidade, coragem e entrega à escrita.
             </p>
-        </section>
-        <section id="motivo" class="tab-content">
-            <h2>Por que este eBook?</h2>
-            <p>
-                O desejo de compartilhar versos que acolhem, emocionam e transformam motivou a criação deste eBook. Acreditando que a poesia pode ser ponte entre pessoas e sentimentos, Thais reuniu textos que refletem seus sentimentos e sua vontade de inspirar outros a enxergar a beleza e a intensidade das emoções nas entrelinhas da existência.
+    </section>
+
+    <section id="motivo" class="tab-content">
+      <h2>Por que este eBook?</h2>
+      <p>O desejo de compartilhar versos que acolhem, emocionam e transformam motivou a criação deste eBook,  fruto de uma jornada de sensibilidade, coragem e entrega à escrita.
             </p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Thais</p>
-    </footer>
-    <script src="main.js"></script>
+        <div class="download-wrapper">
+        <a href="ebook-ser-entrelinhas.pdf" download class="download-btn">📖 Baixar eBook</a>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="tab-content">
+      <h2>Depoimentos</h2>
+      <blockquote>“Me senti abraçada por cada verso.” – Ana P.</blockquote>
+      <blockquote>“Um mergulho sincero nas dores e flores do ser.” – Luiza M.</blockquote>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Thais Faucz Jasse</p>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
